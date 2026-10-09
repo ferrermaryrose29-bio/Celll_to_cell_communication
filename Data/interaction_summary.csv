@@ -1,0 +1,17 @@
+source_database,molecule_a,molecule_b,relationship,evidence_detail,reference_or_score
+HPA,PRL,Pituitary endocrine cells,cell type enriched,tau 0.95; ~22000 nCPM; protein evidence; secreted,proteinatlas.org (PRL single cell)
+HPA,PRLR,Mammary luminal cells,not the strongest signal (disagreement),"enhanced in choroid plexus, parathyroid, placenta; breast luminal lower",proteinatlas.org (PRLR)
+OmniPath,PRL,PRLR,ligand -> receptor,"CellPhoneDB; CellChatDB; CellCall and others; PMIDs 2558309, 7984244, 9626554",45 references
+OmniPath,PRLR,JAK2,directed signaling interaction,not cell-type specific,10 references
+OmniPath,JAK2,STAT5A,directed signaling interaction,not cell-type specific,47 references
+OmniPath,SOCS3 / CISH,,stimulation arrows shown (feedback role is my inference),classically feedback inhibitors; sign not confirmed,n/a
+STRING,7-protein network,,functional association,"PRL; PRLR; JAK2; STAT5A; STAT5B; SOCS3; CISH; 7 nodes; 21 edges; JAK2 central",PPI enrichment p < 1.0e-16 (hand-picked set)
+STRING,GO:0046425,,regulation of JAK-STAT cascade,enriched term,FDR 8.4e-08
+STRING,GO:0007595,,lactation,enriched term,FDR 9.6e-07
+STRING,GO:0030879,,mammary gland development,enriched term,FDR 6.6e-07
+IntAct,PRL,PRLR,direct interaction,circular dichroism; in vitro; EBI-15968354,PMID 22325776; MI 0.56
+IntAct,PRLR,PRL,direct interaction,NMR; in vitro; EBI-15968373 (same paper as above),PMID 22325776; MI 0.56
+IntAct,PRLR,PRL,direct interaction,anti bait co-IP; in vitro; PRLR isoform P16471-7; EBI-6903130,PMID 23048206; MI 0.61
+IntAct,PRLR,JAK2,no IntAct record found,not shown among PRLR interactors in the search,n/a
+IntAct,PRLR,STAT5A,no IntAct record found,not shown among PRLR interactors in the search,n/a
+IntAct,PRLR,CISH,no IntAct record found,not shown among PRLR interactors in the search,n/a
