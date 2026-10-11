@@ -7,7 +7,7 @@ Databases used: Human Protein Atlas (HPA), OmniPath, STRING, IntAct, UniProt (su
 ```
 Cell_cell_communication/
   README.md
-  figures/
+  Figures/
     01_sender_cell_evidence.png
     02_omnipath_evidence.png
     03_string_network.png
@@ -42,7 +42,7 @@ Cell_cell_communication/
 - RNA is cell-type enriched in pituitary endocrine cells (Tau specificity 0.95, about 22,000 nCPM).
 - Protein-level evidence is reported.
 
-Figure: `figures/01_sender_cell_evidence.png`
+Figure: `Figures/01_sender_cell_evidence.png`
 
 **Limit:** expression shows that the sender cell can make PRL. It does not prove that this signal reaches or acts on my chosen receiver cell.
 
@@ -60,7 +60,7 @@ Figure: `figures/01_sender_cell_evidence.png`
 
 ## 5. OmniPath findings
 
-Figure: `figures/02_omnipath_evidence.png`
+Figure: `Figures/02_omnipath_evidence.png`
 
 - **PRL -> PRLR:** annotated as a ligand-receptor pair with 45 references (CellPhoneDB, CellChatDB, CellCall and 31 others; PMIDs 2558309, 7984244, 9626554).
 - **PRLR -> JAK2:** 10 references.
@@ -72,7 +72,7 @@ Figure: `figures/02_omnipath_evidence.png`
 
 ## 6. STRING network interpretation
 
-Figure: `figures/03_string_network.png`
+Figure: `Figures/03_string_network.png`
 
 **Network (Homo sapiens):** 7 proteins (PRL, PRLR, JAK2, STAT5A, STAT5B, SOCS3, CISH), 21 edges, with JAK2 as the central hub.
 
@@ -93,7 +93,7 @@ Figure: `figures/03_string_network.png`
 
 ## 7. IntAct validation
 
-Figure: `figures/04_intact_evidence.png`
+Figure: `Figures/04_intact_evidence.png`
 
 **Pair examined:** PRL (P01236) and PRLR (P16471).
 
@@ -111,7 +111,7 @@ Figure: `figures/04_intact_evidence.png`
 
 ## 8. Final model and interpretation
 
-![Final cell-to-cell communication model](figures/05_final_model.png)
+![Final cell-to-cell communication model](Figures/05_final_model.png)
 
 Original diagram prepared by me for this lab (not a database screenshot). Solid arrows = supported by databases. Dashed arrows = my inference. Dashed line with a flat end = inferred inhibition.
 
@@ -131,23 +131,4 @@ My inference: mammary luminal epithelial cells are the receiver, PRL reaches the
 6. **Enriched process:** JAK-STAT regulation (GO:0046425), lactation (GO:0007595) and mammary gland development (GO:0030879). These are consistent with the mechanism but come from a hand-picked protein set.
 7. **IntAct result and evidence type:** a curated direct-interaction record for PRL-PRLR from circular dichroism and NMR on purified proteins in vitro (Homo sapiens, PMID 22325776), plus a second record using co-IP and PLA with a PRLR isoform (PMID 23048206). No record was found for PRLR-JAK2, PRLR-STAT5A or PRLR-CISH, which is not evidence of no interaction.
 8. **Strongly supported vs inferred:** *Supported by databases:* PRL expression in pituitary endocrine cells, the PRL-PRLR ligand-receptor annotation, direct PRL-PRLR binding in vitro, and the PRLR -> JAK2 -> STAT5 pathway in OmniPath. *Inferred:* the mammary luminal receiver choice, the endocrine classification, the SOCS3/CISH feedback roles in this system, and the milk-protein gene expression response.
-9. **Expected response:** JAK2-STAT5 signaling leading to milk-protein gene expression in the mammary luminal cell, because the pathway and the enriched terms (lactation, mammary gland development) point there and the literature links PRL-STAT5 signaling to milk-protein genes. This is an inference, since the databases do not show that this occurs in these cells.
-
-## 10. References and database links
-
-**Databases**
-- Human Protein Atlas: https://www.proteinatlas.org/
-- OmniPath Explorer: https://explore.omnipathdb.org/
-- STRING: https://string-db.org/
-- IntAct: https://www.ebi.ac.uk/intact/
-- UniProt: https://www.uniprot.org/ (PRL P01236; PRLR P16471)
-
-**Papers**
-- Dagil R, Knudsen MJ, Olsen JG, O'Shea C, Franzmann M, Goffin V, Teilum K, Breinholt J, Kragelund BB. (2012) The WSXWS motif in cytokine receptors is a molecular switch involved in receptor activation: insight from structures of the prolactin receptor. *Structure*. PMID 22325776. doi:10.1016/j.str.2011.12.010
-- Fleming JM, Ginsburg E, McAndrew CW, Heger CD, Cheston L, Rodriguez-Canales J, Vonderhaar BK, Goldsmith P. (2013) Characterization of delta-7/11, a functional prolactin-binding protein. *J Mol Endocrinol*. PMID 23048206.
-- Hynes NE, Cella N, Wartmann M. (1997) Prolactin mediated intracellular signaling in mammary epithelial cells. *J Mammary Gland Biol Neoplasia* 2(1):19-27.
-- Review of the JAK2-STAT5 pathway in the mammary gland. *Front Cell Dev Biol* (2020). doi:10.3389/fcell.2020.604896
-- Inactivation of Stat5 in mouse mammary epithelium during pregnancy reveals distinct functions in cell proliferation, survival, and differentiation. https://pmc.ncbi.nlm.nih.gov/articles/PMC515028
-- Study of CIS and SOCS3 expression and function as negative feedback inhibitors of PRL-induced STAT5 activation in mouse mammary gland and HC11 cells. PubMed PMID 12089360.
-- Tomic S, Chughtai N, Ali S. SOCS-1, -2, -3: selective targets and functions downstream of the prolactin receptor.
-- OmniPath-listed references for PRL-PRLR: PMIDs 2558309, 7984244, 9626554.
+9. **Expected response:** JAK2-STAT5 signaling leading to milk-protein gene expression in the mammary luminal cell, because the pathway and the enriched terms (lactation, mammary gland development) point there and the literature links PRL-STAT5 signaling to milk-protein
